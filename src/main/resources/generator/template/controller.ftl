@@ -1,6 +1,6 @@
 package ${basePackage}.controller;
-import ${basePackage}.core.Result;
-import ${basePackage}.core.ResultGenerator;
+import ${basePackage}.common.core.Result;
+import ${basePackage}.common.core.ResultGenerator;
 import ${basePackage}.model.${modelNameUpperCamel};
 import ${basePackage}.service.${modelNameUpperCamel}Service;
 import com.github.pagehelper.PageHelper;
@@ -25,7 +25,7 @@ public class ${modelNameUpperCamel}Controller {
 
     @PostMapping("/add")
     public Result add(${modelNameUpperCamel} ${modelNameLowerCamel}) {
-        ${modelNameLowerCamel}Service.save(${modelNameLowerCamel});
+        ${modelNameLowerCamel}Service.insert(${modelNameLowerCamel});
         return ResultGenerator.genSuccessResult();
     }
 

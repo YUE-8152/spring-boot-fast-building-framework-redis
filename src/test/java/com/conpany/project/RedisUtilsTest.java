@@ -1,6 +1,6 @@
 package com.conpany.project;
 
-import com.company.project.core.RedisTool;
+import com.company.project.common.utils.RedisUtils;
 import com.company.project.dao.OrderItemMapper;
 import com.company.project.model.OrderItem;
 import org.junit.Test;
@@ -9,9 +9,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.HashMap;
 import java.util.List;
 
-public class RedisToolTest extends Tester {
+public class RedisUtilsTest extends Tester {
     @Autowired(required = false)
-    private RedisTool redis;
+    private RedisUtils redis;
 
     @Autowired(required = false)
     private OrderItemMapper orderItemMapper;

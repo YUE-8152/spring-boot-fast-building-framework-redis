@@ -1,6 +1,6 @@
 package com.company.project.service;
 import com.company.project.model.OrderItem;
-import com.company.project.core.Service;
+import com.company.project.common.core.Service;
 
 
 /**

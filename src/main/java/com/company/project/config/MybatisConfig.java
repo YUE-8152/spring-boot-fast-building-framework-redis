@@ -1,6 +1,5 @@
 package com.company.project.config;
 
-import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInterceptor;
 import org.apache.ibatis.plugin.Interceptor;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -14,7 +13,7 @@ import tk.mybatis.spring.mapper.MapperScannerConfigurer;
 import javax.sql.DataSource;
 import java.util.Properties;
 
-import static com.company.project.core.ProjectConstant.*;
+import static com.company.project.common.constant.GeneratorConstant.*;
 
 /**
  * Mybatis & Mapper & PageHelper 配置

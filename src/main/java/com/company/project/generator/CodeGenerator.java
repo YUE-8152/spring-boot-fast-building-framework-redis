@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-import static com.company.project.core.ProjectConstant.*;
+import static com.company.project.common.constant.GeneratorConstant.*;
 
 /**
  * 代码生成器，根据数据表名称生成对应的Model、Mapper、Service、Controller简化开发。
@@ -44,7 +44,7 @@ public class CodeGenerator {
     private static final String DATE = new SimpleDateFormat("yyyy-MM-dd HH:MM:ss").format(new Date());
 
     public static void main(String[] args) {
-        genCode("order", "order_item");
+        genCode("order_item");
         //genCodeByCustomModelName("输入表名","输入自定义Model名称");
     }
 

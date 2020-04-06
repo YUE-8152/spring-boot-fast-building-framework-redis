@@ -1,6 +1,6 @@
 package com.company.project.controller;
-import com.company.project.core.Result;
-import com.company.project.core.ResultGenerator;
+import com.company.project.common.core.Result;
+import com.company.project.common.core.ResultGenerator;
 import com.company.project.model.OrderItem;
 import com.company.project.service.OrderItemService;
 import com.github.pagehelper.PageHelper;
@@ -25,7 +25,7 @@ public class OrderItemController {
 
     @PostMapping("/add")
     public Result add(OrderItem orderItem) {
-        orderItemService.save(orderItem);
+        orderItemService.insert(orderItem);
         return ResultGenerator.genSuccessResult();
     }
 

@@ -1,7 +1,5 @@
-package com.company.project.core;
+package com.company.project.common.core;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
 import tk.mybatis.mapper.common.BaseMapper;
 import tk.mybatis.mapper.common.ConditionMapper;
 import tk.mybatis.mapper.common.IdsMapper;
